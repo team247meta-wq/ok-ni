@@ -1,0 +1,32 @@
+{
+  "name": "Sổ quỹ Tổ 2 Tuyển dụng",
+  "short_name": "Sổ quỹ",
+  "description": "Quản lý dòng tiền, thu chi và phí cho Tổ 2 Tuyển dụng",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#E7ECF4",
+  "theme_color": "#0E9F6E",
+  "lang": "vi",
+  "icons": [
+    {
+      "src": "https://media.base44.com/images/public/6aaf8198d70750feca5bf597/c0d39cd65_aecch.jpg",
+      "sizes": "640x640",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "https://media.base44.com/images/public/6aaf8198d70750feca5bf597/c0d39cd65_aecch.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "https://media.base44.com/images/public/6aaf8198d70750feca5bf597/c0d39cd65_aecch.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

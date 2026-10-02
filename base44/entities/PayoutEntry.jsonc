@@ -1,0 +1,51 @@
+{
+  "name": "PayoutEntry",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "in",
+        "out"
+      ],
+      "default": "out"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "note": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "group_id": {
+      "type": "string"
+    },
+    "deleted_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "type",
+    "amount",
+    "note"
+  ],
+  "rls": {
+    "read": {},
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

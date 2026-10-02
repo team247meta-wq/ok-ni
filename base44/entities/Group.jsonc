@@ -1,0 +1,48 @@
+{
+  "name": "Group",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "fee_rate": {
+      "type": "number",
+      "default": 6
+    },
+    "out_fee_rate": {
+      "type": "number",
+      "default": 6
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "full",
+        "expense",
+        "profit",
+        "usdt"
+      ],
+      "default": "full"
+    }
+  },
+  "required": [
+    "name"
+  ],
+  "rls": {
+    "read": {},
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

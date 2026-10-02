@@ -1,0 +1,4 @@
+{
+  "name": "syncLedgerToSheet",
+  "entry": "entry.ts"
+}

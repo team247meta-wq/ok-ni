@@ -1,0 +1,4 @@
+{
+  "name": "sendTelegramReport",
+  "entry": "entry.ts"
+}

@@ -1,0 +1,4 @@
+{
+  "name": "sendLedgerReportEmail",
+  "entry": "entry.ts"
+}

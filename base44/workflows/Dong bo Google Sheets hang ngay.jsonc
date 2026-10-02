@@ -1,0 +1,45 @@
+{
+  "description": "T\u1ef1 \u0111\u1ed9ng \u0111\u1ea9y to\u00e0n b\u1ed9 giao d\u1ecbch m\u1edbi l\u00ean file Google Sheets m\u1ed7i ng\u00e0y l\u00fac 23:00 gi\u1edd Vi\u1ec7t Nam",
+  "name": "\u0110\u1ed3ng b\u1ed9 Google Sheets h\u00e0ng ng\u00e0y",
+  "definition": {
+    "document": {
+      "dsl": "1.0.0",
+      "name": "dong_bo_google_sheets_hang_ngay",
+      "version": "1.0",
+      "namespace": "base44"
+    },
+    "do": [
+      {
+        "sync_ledger_to_sheet": {
+          "call": "invoke_backend_function",
+          "with": {
+            "function_name": "syncLedgerToSheet",
+            "args": {}
+          },
+          "then": "end",
+          "x-base44": {
+            "title": "\u0110\u1ed3ng b\u1ed9 s\u1ed5 qu\u1ef9 l\u00ean Google Sheets",
+            "description": "C\u1eadp nh\u1eadt to\u00e0n b\u1ed9 giao d\u1ecbch"
+          }
+        }
+      }
+    ]
+  },
+  "trigger": {
+    "condition": null,
+    "config": {
+      "trigger_type": "scheduled",
+      "events": [],
+      "schedule_mode": "recurring",
+      "cron_expression": "0 23 * * *",
+      "one_time_date": null,
+      "timezone": "Asia/Saigon",
+      "interval_value": null,
+      "interval_unit": null,
+      "interval_anchor": null,
+      "ends_type": "never",
+      "ends_on_date": null,
+      "ends_after_count": null
+    }
+  }
+}

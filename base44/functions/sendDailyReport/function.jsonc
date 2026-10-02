@@ -1,0 +1,4 @@
+{
+  "name": "sendDailyReport",
+  "entry": "entry.ts"
+}
